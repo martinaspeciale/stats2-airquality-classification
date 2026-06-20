@@ -1,0 +1,6 @@
+"","unemp_rate","educ_tertiary","rnd_gdp_pct","hitech_emp_pct","broadband_pct"
+"unemp_rate",1,-0.014,-0.115,-0.158,-0.017
+"educ_tertiary",-0.014,1,0.43,-0.37,0.32
+"rnd_gdp_pct",-0.115,0.43,1,-0.262,0.012
+"hitech_emp_pct",-0.158,-0.37,-0.262,1,0.005
+"broadband_pct",-0.017,0.32,0.012,0.005,1
