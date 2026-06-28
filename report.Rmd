@@ -75,6 +75,23 @@ suddivise in: `r sum(all_data$dev_class=="meno_sviluppata")` meno sviluppate,
 bilanciate). Partizione: 75% training (`r nrow(train)`) / 25% test
 (`r nrow(test)`), seme `set.seed(2026)`.
 
+```{r desc-stats}
+preds <- c("unemp_rate","educ_tertiary","rnd_gdp_pct","hitech_emp_pct","broadband_pct")
+desc <- do.call(rbind, lapply(preds, function(v) {
+  data.frame(
+    Variabile = v,
+    `Meno sv.`  = round(median(all_data[[v]][all_data$dev_class=="meno_sviluppata"], na.rm=TRUE),1),
+    `Transiz.`  = round(median(all_data[[v]][all_data$dev_class=="transizione"],     na.rm=TRUE),1),
+    `Più sv.`   = round(median(all_data[[v]][all_data$dev_class=="piu_sviluppata"],  na.rm=TRUE),1),
+    check.names = FALSE
+  )
+}))
+desc$Variabile <- c("Disoccupazione (%)","Educ. terziaria (%)","R\\&S (% PIL)",
+                    "High-tech (%)","Banda larga (%)")
+kable(desc, booktabs = TRUE, escape = FALSE, row.names = FALSE,
+      caption = "Mediane dei predittori per categoria di sviluppo (dataset completo). Il gradiente tra classi è visibile per tutte le variabili tranne la disoccupazione, che distingue soprattutto la classe meno sviluppata.")
+```
+
 ```{r eda, results='hide'}
 source("R/02_eda.R")
 ```
