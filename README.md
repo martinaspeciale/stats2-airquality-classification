@@ -1,4 +1,4 @@
-# NOTES — stats2-classification-eu-regions
+# stats2-airquality-classification
 
 Living document: decisions, data details, model results.
 
@@ -120,5 +120,5 @@ La classe "meno sviluppata" è classificata quasi perfettamente: profilo struttu
 | Dilemma bias-varianza discusso | ✅ Nella curva CV di KNN |
 | Test set usato solo per valutazione finale | ✅ |
 | Report PDF ~7 pagine in italiano | ✅ xelatex |
-| Codice in appendice | ✅ readLines() di tutti e 4 gli script |
+| Codice consegnato separatamente | ✅ File `R/01_load_data.R` – `R/04_evaluation.R` allegati come da consegna (guida richiede solo CSV+PDF+codice, l'appendice nel PDF è opzionale) |
 | Dati CSV caricabili | ✅ data/regions_raw.csv |
