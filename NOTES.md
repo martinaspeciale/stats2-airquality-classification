@@ -7,7 +7,9 @@ Living document: decisions, data details, model results.
 ## Fonte dei dati
 
 **Eurostat** — ufficio statistico ufficiale dell'Unione Europea.
-API: `https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/{codice}`
+API: dataset scaricati con `eurostat::get_eurostat(codice)`.
+Schede Eurostat: `tgs00006`, `tgs00010`, `tgs00109`, `tgs00042`,
+`tgs00059`, `isoc_r_broad_h`.
 Accesso tramite pacchetto R `eurostat` (wrapper ufficiale dell'API Eurostat).
 
 Anno di riferimento: **2021** (anno più recente con dati regionali completi).

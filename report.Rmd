@@ -1,7 +1,7 @@
 ---
 title: "Classificazione delle Regioni Europee per Livello di Sviluppo"
 subtitle: "Analisi di classificazione sui dati Eurostat NUTS-2 (2021)"
-author: "Martina"
+author: "Martina Speciale"
 date: "`r Sys.Date()`"
 output:
   pdf_document:
@@ -37,11 +37,14 @@ valutarne la capacità predittiva su dati non visti.
 
 **Fonte.** Dati **Eurostat**, anno 2021, livello NUTS-2, scaricati via API:
 
-\small`https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/{codice}`\normalsize
-
-Dataset utilizzati: `tgs00006` (PIL PPS, definisce la classe), `tgs00010`,
-`tgs00109`, `tgs00042`, `tgs00059`, `isoc_r_broad_h`. Il codice R completo
-è allegato come file separato (`R/01_load_data.R` – `R/04_evaluation.R`).
+Dataset utilizzati: [tgs00006](https://ec.europa.eu/eurostat/databrowser/view/tgs00006/default/table?lang=en)
+(PIL PPS, definisce la classe),
+[tgs00010](https://ec.europa.eu/eurostat/databrowser/view/tgs00010/default/table?lang=en),
+[tgs00109](https://ec.europa.eu/eurostat/databrowser/view/tgs00109/default/table?lang=en),
+[tgs00042](https://ec.europa.eu/eurostat/databrowser/view/tgs00042/default/table?lang=en),
+[tgs00059](https://ec.europa.eu/eurostat/databrowser/view/tgs00059/default/table?lang=en),
+[isoc_r_broad_h](https://ec.europa.eu/eurostat/databrowser/view/isoc_r_broad_h/default/table?lang=en).
+Il codice R completo è allegato come file separato (`R/01_load_data.R` – `R/04_evaluation.R`).
 
 # I Dati
 
